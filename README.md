@@ -21,12 +21,21 @@ This project is a web scraper that extracts data on Men's casual shoes priced un
 
 <h3>Prerequisites</h3>
 <li>Python 3.x installed on your system</li>
-<li>BeautifulSoup and Pandas libraries installed (you can install them using pip install beautifulsoup4 pandas)</li>
-<li>Running the Script</li>
-
+<li>Required libraries installed</li>
+<pre class="line-numbers">
+   <code class="language-python">
+      pip install requests beautifulsoup4 pandas
+   </code>
+</pre>
 <h3>Clone the repository to your local machine.</h3>
 <li>Navigate to the project directory in your terminal/command prompt.</li>
-<li>Run the script using python scraper.py.</li>
+<li>Run the script using :
+  <pre class="line-numbers">
+   <code class="language-python">
+      py scraper.py
+   </code>
+  </pre>
+</li>
 
 <h2>Output</h2>
 <li>The script will display the extracted data in a tabular format and save the data in product.json and product.csv files in the project directory.</li>
