@@ -13,8 +13,13 @@ page = 1
 
 r = requests.get(url)
 soup = BeautifulSoup(r.text, "html.parser")
-# last_page =(list(map(str, (soup.find("div", class_ = "_1G0WLw").span.string).split()))[-1])
-last_page = 1
+
+''' This script is automated to scraping data form all the pages present by extracting the
+    number of pages present.
+    Number of pages to scrape data can be set manually'''
+
+total_page =(list(map(str, (soup.find("div", class_ = "_1G0WLw").span.string).split()))[-1])
+last_page = int(input("Number of pages to scrape data out of " + total_page)
 def get_url():
     global url
     global page
