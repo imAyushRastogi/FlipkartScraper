@@ -19,7 +19,7 @@ soup = BeautifulSoup(r.text, "html.parser")
     Number of pages to scrape data can be set manually'''
 
 total_page =(list(map(str, (soup.find("div", class_ = "_1G0WLw").span.string).split()))[-1])
-last_page = int(input("Number of pages to scrape data out of " + total_page))
+last_page = int(input("Number of pages to scrape data out of " + total_page + " pages : "))
 def get_url():
     global url
     global page
